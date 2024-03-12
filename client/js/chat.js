@@ -106,7 +106,7 @@ const ask_gpt = async (message) => {
 			body: JSON.stringify({
 				conversation_id: window.conversation_id,
 				action: `_ask`,
-				model: model.options[model.selectedIndex].value,
+				model: 'gpt-3.5-long',
 				provider: provider.options[provider.selectedIndex].value,
 				jailbreak: jailbreak.options[jailbreak.selectedIndex].value,
 				meta: {

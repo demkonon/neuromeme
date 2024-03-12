@@ -46,12 +46,12 @@
 					<div class="spinner"></div>
 				</div>
 				<div class="sidebar-footer">
-					<!-- <button class="button" onclick="delete_conversations()">
+					<button class="button" onclick="delete_conversations()">
 						<i class="fa-regular fa-trash"></i>
 						<span>{{_('Clear Conversations')}}</span>
-					</button> -->
+					</button>
 						<div class="settings-container">
-								<div class="field">
+								<div class="field"  style="display: none;">
 									<span>{{_('Model')}}</span>
 									<select class="dropdown" name="model" id="model">
 										<option value="gpt-3.5-turbo" selected="">GPT-3.5-turbo</option>
@@ -60,7 +60,7 @@
 										<option value="gemini-pro">Gemini-pro</option>
 									</select>
 								</div>
-								<div class="field">
+								<div class="field"  style="display: none;">
 									<span>{{_('Provider')}}</span>
 										<select class="dropdown" name="provider" id="provider">
 											<option value="g4f.Provider.Auto" selected>Auto</option>
@@ -72,7 +72,7 @@
 											<option value="g4f.Provider.You">You</option>																					
 									</select>
 								</div>
-								<div class="field">
+								<div class="field"  style="display: none;">
 									<span>{{_('Jailbreak')}}</span>
 										<select class="dropdown" name="jailbreak" id="jailbreak">
 										<option value="default" selected>{{_('Default')}}</option>
@@ -80,14 +80,14 @@
 										<option value="gpt-evil">{{_('Evil')}}</option>
 									</select>
 								</div>
-								<div class="field">
+								<div class="field"  style="display: none;">
 									<span>{{_('Language')}}</span>
 									<select
 									class="dropdown"
 									id="language"
 									onchange="changeLanguage(this.value)"></select>
 								</div>
-								<div class="field checkbox">
+								<div class="field checkbox"  style="display: none;">
 									<span>{{_('Web Access')}}</span>									
 									<input type="checkbox" id="switch" />
 									<label for="switch"></label>
@@ -97,7 +97,7 @@
 									<input type="checkbox" id="theme-toggler" />
 									<label for="theme-toggler"></label>
 								</div>
-								<div class="field checkbox fullscreen">
+								<div class="field checkbox fullscreen"  style="display: none;">
 									<span>{{_('Fullscreen Mode')}}</span>
 									<input type="checkbox" id="fullscreen-toggle" />
 									<label for="fullscreen-toggle"></label>
@@ -108,10 +108,6 @@
 									<label for="hl-toggle"></label>
 								</div> -->			
 					</div>
-					<a class="info" href="https://github.com/VadimBoev/freegpt-webui-v2" target="_blank">
-						<i class="fa-brands fa-github"></i>
-						<span class="conversation-title"> {{_('Version')}}: 0.8 </span>
-					</a>
 				</div>
 			</div>
 			<div class="conversation">
