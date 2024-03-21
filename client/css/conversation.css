@@ -12,7 +12,7 @@
 	flex-direction: column;
 	overflow: auto;
 	overflow-wrap: break-word;
-	padding-bottom: 8px;
+	padding-bottom: 100px;
 }
 
 @media screen and (max-width: 990px) {
@@ -52,17 +52,18 @@
 }
 
 .conversation .user-input textarea {
-	font-size: 1rem;
+	font-size: 0.75rem;
 	width: max(98%);
-	height: 100%;
-	padding: 12px;
+	padding: 8px 12px;
 	background: none;
+	line-height: 32px;
 	border: none;
 	outline: none;
 	color: var(--colour-3);
 	resize: vertical;
-	max-height: 150px;
-	min-height: 80px;
+	height: 32px !important;
+	resize: none;
+	box-sizing: content-box;
 }
 
 .box {
