@@ -14,17 +14,12 @@
     <!-- <button on:click={() => player.play()}>PLAY</button>
     <button on:click={() => player.pause()}>PAUSE</button> -->
     <Plyr on:timeupdate={logEvent} bind:player={player}>
-        <video
-    crossorigin
-    playsinline
-    poster="https://m.media-amazon.com/images/I/81QBt4prTuL._AC_UF1000,1000_QL80_.jpg"
-    src="/Users/daniil/Desktop/Работа/NewNeuroGPT/open-webui/static/example_video.mp4"
-  >
-    <source
-      src="/Users/daniil/Desktop/Работа/NewNeuroGPT/open-webui/static/example_video.mp4"
-      type="video/mp4"
-    >
-  </video>
+        <div class="plyr__video-embed">
+            <iframe
+              src="https://www.youtube.com/watch?v=wi08uYZBhRs&iv_load_policy=3&modestbranding=1&playsinline=1&showinfo=0&rel=0&enablejsapi=1"
+              allowfullscreen allowtransparency allow="autoplay">
+            </iframe>
+          </div>
     </Plyr>
   </div>
   
