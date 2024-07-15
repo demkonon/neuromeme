@@ -1,0 +1,32 @@
+general_settings: {}
+litellm_settings: {}
+model_list: 
+  - model_name: re:llama-3-8b
+    litellm_params: 
+      model: replicate/meta/meta-llama-3-8b
+      api_key: r8_JEA1xXGxcXbIWtyx9kUheTPRznJyGHZ4X5YGz
+  - model_name: re:llama-3-70b
+    litellm_params: 
+      model: replicate/meta/meta-llama-3-70b-instruct
+      api_key: r8_JEA1xXGxcXbIWtyx9kUheTPRznJyGHZ4X5YGz
+  - model_name: re:mixtral
+    litellm_params: 
+      model: replicate/mistralai/mixtral-8x7b-instruct-v0.1
+      api_key: r8_JEA1xXGxcXbIWtyx9kUheTPRznJyGHZ4X5YGz
+  - model_name: re:llava-13b
+    litellm_params: 
+      model: replicate/yorickvp/llava-v1.6-vicuna-13b
+      api_key: r8_JEA1xXGxcXbIWtyx9kUheTPRznJyGHZ4X5YGz
+  - model_name: groq:llama-3-8b
+    litellm_params: 
+      model: groq/llama3-8b-8192
+      api_key: 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
+  - model_name: groq:llama-3-70b
+    litellm_params: 
+      model: groq/llama3-70b-8192
+      api_key: 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
+  - model_name: groq:mixtral
+    litellm_params: 
+      model: groq/mixtral-8x7b-32768
+      api_key: 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
+router_settings: {}
